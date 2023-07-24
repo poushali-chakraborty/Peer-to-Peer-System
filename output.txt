@@ -1,0 +1,91 @@
+javac PeerToPeerSystem.java
+PS C:\Users\poush\Desktop\nw_assingment(p2p)\P2P demo 2> java PeerToPeerSystem  6000 6001 6002 file1 file2 file3 
+Generated ID: 139
+Node 139 received: ID :248
+Node 139 received: ID :314
+Deciding leader: 1
+Deciding leader: 2
+Leader status: true
+Node 139 received: Files : Node Port :6002:file5,file6
+Leader status: true
+Node 139 received: Files : Node Port :6002:file5,file6
+Node 139 received: Files : Node Port :6001:file3,file4
+Node 139 received: Files : Node Port :6001:file3,file4
+Node 139 received: FILE_QUERY : Port :6002:file1
+Node 139 received: FILE_QUERY : Port :6001:file5
+Node 139 received: FILE_QUERY : Port :6001:file5
+Node 139 received: FILE_QUERY : Port :6002:file1
+Node 139 received: FILE_QUERY : Port :6002:file1
+Node 139 received: FILE_QUERY : Port :6001:file5
+Node 139 received: FILE_QUERY : Port :6002:file1
+Node 139 received: FILE_QUERY : Port :6001:file5
+
+
+PS C:\Users\poush\Desktop\nw_assingment(p2p)\P2P demo 2> java PeerToPeerSystem  6001 6000 6002 file3 file4 file5
+Generated ID: 248
+Node 248 received: ID :314
+Deciding leader: 1
+Not all peers are connected
+Node 248 received: ID :139
+Deciding leader: 2
+Node 248 received: Leader: true:6000:139
+leader set
+Removing Connection:
+Removing Connection: 6002
+Node 248 received: Leader: true:6000:139
+leader set
+Removing Connection:
+Node 248 received: null
+Removing Connection: 6002
+Node 248 received: READY
+Now you can query for a file
+Node 248 received: READY
+Now you can query for a file
+Node 248 received: READY
+Now you can query for a file
+Node 248 received: READY
+Now you can query for a file
+Node 248 received: file: file1 NOT FOUND
+Node 248 received: file: file5: port :6002
+Node 248 received: file: file1 NOT FOUND
+Node 248 received: file: file5: port :6002
+Node 248 received: file: file1 NOT FOUND
+Node 248 received: file: file1 NOT FOUND
+Node 248 received: file: file5: port :6002
+Node 248 received: file: file5: port :6002
+
+
+
+
+java PeerToPeerSystem  6002 6000 6001 file5 file6 file1
+Generated ID: 314
+Node 314 received: ID :248
+Deciding leader: 1
+Not all peers are connected
+Node 314 received: ID :139
+Deciding leader: 2
+Node 314 received: Leader: true:6000:139
+leader set
+Removing Connection:
+Removing Connection: 6001
+Node 314 received: null
+Node 314 received: Leader: true:6000:139
+leader set
+Removing Connection:
+Removing Connection: 6001
+Node 314 received: READY
+Now you can query for a file
+Node 314 received: READY
+Now you can query for a file
+Node 314 received: READY
+Now you can query for a file
+Node 314 received: READY
+Now you can query for a file
+Node 314 received: file: file1: port :6000
+Node 314 received: file: file5 NOT FOUND
+Node 314 received: file: file1: port :6000
+Node 314 received: file: file5 NOT FOUND
+Node 314 received: file: file1: port :6000
+Node 314 received: file: file1: port :6000
+Node 314 received: file: file5 NOT FOUND
+Node 314 received: file: file5 NOT FOUND
